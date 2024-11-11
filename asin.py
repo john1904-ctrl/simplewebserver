@@ -1,33 +1,9 @@
-# EX01 Developing a Simple Webserver
-## Date:18/10/2024
-
-## AIM:
-To develop a simple webserver to serve html pages and display the configuration details of laptop.
-
-## DESIGN STEPS:
-### Step 1: 
-HTML content creation.
-
-### Step 2:
-Design of webserver workflow.
-
-### Step 3:
-Implementation using Python code.
-
-### Step 4:
-Serving the HTML pages.
-
-### Step 5:
-Testing the webserver.
-
-## PROGRAM:
-```
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
 
 <html>
     <body>
-        <h1 align="center">DEVICE PROPERTIES(JOHN PALL M  24900131)</h1>
+        <h1 align="center">DEVICE PROPERTIES(ASIN RENIX V 24900126)</h1>
         <ol type="1">
             <li>Device name	DESKTOP-MOHHBTU
             </li>
@@ -57,13 +33,3 @@ server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
-```
-
-## OUTPUT:
-
-![alt text](<Screenshot (21).png>)
-
-![alt text](<Screenshot (19).png>)
-
-## RESULT:
-The program for implementing simple webserver is executed successfully.
